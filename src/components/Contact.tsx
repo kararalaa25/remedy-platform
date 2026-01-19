@@ -32,10 +32,7 @@ const Contact = () => {
     <section id="contact" className="py-24 px-4 bg-secondary">
       <div className="max-w-4xl mx-auto text-center">
         {/* Section Header */}
-        <span className="inline-block text-accent font-semibold text-sm uppercase tracking-wider mb-3">
-          Connect With Us
-        </span>
-        <h2 className="section-title mb-4">Follow Us</h2>
+        <h2 className="section-title mb-4">Connect With Us</h2>
         <p className="section-subtitle mx-auto mb-12">
           Stay connected and follow our journey across social media.
         </p>

@@ -1,10 +1,10 @@
-import { Gift, BookOpen, BarChart, Bookmark, Target, Smartphone } from "lucide-react";
+import { Gift, BookOpen, BarChart, Bookmark, Target, Smartphone, Users } from "lucide-react";
 
 const Features = () => {
   const features = [
     {
       title: "Free Trial",
-      description: "Access over 500 questions for free and explore the full potential of our platform",
+      description: "Access over 2000 questions for free and explore the full potential of our platform",
       icon: Gift,
     },
     {
@@ -28,9 +28,14 @@ const Features = () => {
       icon: Target,
     },
     {
-      title: "Study on Two Devices",
-      description: "Easily access your question bank on both your phone and iPad, with synchronized progress",
+      title: "Use on Two Devices",
+      description: "Can be used by 2 devices - access your question bank on both your phone and iPad with synchronized progress",
       icon: Smartphone,
+    },
+    {
+      title: "Group Discussion",
+      description: "Group discussion for Remedy subscribers - connect and collaborate with fellow medical students",
+      icon: Users,
     },
   ];
 
@@ -40,7 +45,7 @@ const Features = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <span className="inline-block text-accent font-semibold text-sm uppercase tracking-wider mb-3">
-            Why Choose ReMedy
+            Why Choose Remedy
           </span>
           <h2 className="section-title">Amazing Features</h2>
           <p className="section-subtitle mx-auto">

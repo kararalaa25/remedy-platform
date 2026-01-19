@@ -26,9 +26,7 @@ const Hero = () => {
 
           {/* Headline */}
           <h1 className="hero-text text-white mb-6">
-            We Make{" "}
-            <span className="text-accent">Medical Exams</span>{" "}
-            Easy to Conquer
+            <span className="text-primary">Review Medicine</span>, it's really worth it,
           </h1>
 
           {/* Subtitle */}
@@ -70,8 +68,8 @@ const Hero = () => {
               <div className="text-white/70 text-sm">Free Questions</div>
             </div>
             <div>
-              <div className="text-3xl font-bold text-white">24/7</div>
-              <div className="text-white/70 text-sm">Study Access</div>
+              <div className="text-3xl font-bold text-white">2</div>
+              <div className="text-white/70 text-sm">Devices Supported</div>
             </div>
           </div>
         </div>
