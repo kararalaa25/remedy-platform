@@ -4,7 +4,7 @@ const About = () => {
   const sections = [
     {
       title: "Our Mission",
-      content: "At ReMedy, our mission is to guide and support medical students and professionals from medical school through residency. The name ReMedy comes from (Re) and (Medy), which stands for Review Medicine—reflecting our commitment to helping you review the most crucial medical knowledge.",
+      content: "At Remedy, our mission is to guide and support medical students and professionals from medical school through residency. The name Remedy comes from (Re) and (medy), which stands for Review Medicine—reflecting our commitment to helping you review the most crucial medical knowledge.",
       icon: Lightbulb,
     },
     {
@@ -24,10 +24,7 @@ const About = () => {
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <span className="inline-block text-primary font-semibold text-sm uppercase tracking-wider mb-3">
-            About Us
-          </span>
-          <h2 className="section-title">About ReMedy</h2>
+          <h2 className="section-title">Our Story</h2>
           <p className="section-subtitle mx-auto">
             Your trusted partner in medical education excellence
           </p>
