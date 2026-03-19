@@ -2,60 +2,60 @@ import { Check, CreditCard, Smartphone, QrCode } from "lucide-react";
 
 const Pricing = () => {
   const plans = [
-    {
-      title: "Qbank (All branches) + Library",
-      price: "50,000",
-      featured: true,
-      features: [
-        "All Qbank branches included",
-        "Full Remedy Library access",
-        "Detailed explanations",
-        "Performance statistics",
-        "Group discussion access",
-      ],
-    },
-    {
-      title: "Qbank (All branches)",
-      price: "30,000",
-      featured: false,
-      features: [
-        "All Qbank branches included",
-        "Detailed explanations",
-        "Performance statistics",
-        "Group discussion access",
-      ],
-    },
-    {
-      title: "Library",
-      price: "25,000",
-      featured: false,
-      features: [
-        "Full Remedy Library access",
-        "Comprehensive study materials",
-        "Use on 2 devices",
-      ],
-    },
-    {
-      title: "Qbank (2 branches)",
-      price: "20,000",
-      featured: false,
-      features: [
-        "Choose any 2 branches",
-        "Detailed explanations",
-        "Performance statistics",
-      ],
-    },
-    {
-      title: "Qbank (1 branch)",
-      price: "12,000",
-      featured: false,
-      features: [
-        "Choose any 1 branch",
-        "Detailed explanations",
-        "Performance statistics",
-      ],
-    },
-  ];
+  {
+    title: "Qbank (All branches) + Library",
+    price: "50,000",
+    featured: true,
+    features: [
+    "All Qbank branches included",
+    "Full Remedy Library access",
+    "Detailed explanations",
+    "Performance statistics",
+    "Group discussion access"]
+
+  },
+  {
+    title: "Qbank (All branches)",
+    price: "30,000",
+    featured: false,
+    features: [
+    "All Qbank branches included",
+    "Detailed explanations",
+    "Performance statistics",
+    "Group discussion access"]
+
+  },
+  {
+    title: "Library",
+    price: "25,000",
+    featured: false,
+    features: [
+    "Full Remedy Library access",
+    "Comprehensive study materials",
+    "Use on 2 devices"]
+
+  },
+  {
+    title: "Qbank (2 branches)",
+    price: "20,000",
+    featured: false,
+    features: [
+    "Choose any 2 branches",
+    "Detailed explanations",
+    "Performance statistics"]
+
+  },
+  {
+    title: "Qbank (1 branch)",
+    price: "12,000",
+    featured: false,
+    features: [
+    "Choose any 1 branch",
+    "Detailed explanations",
+    "Performance statistics"]
+
+  }];
+
 
   return (
     <section id="pricing" className="relative py-24 px-4 overflow-hidden">
@@ -66,9 +66,9 @@ const Pricing = () => {
       <div className="relative z-10 max-w-7xl mx-auto">
         {/* Header Badge */}
         <div className="text-center mb-16">
-          <span className="inline-block bg-accent text-accent-foreground font-bold text-lg px-8 py-3 rounded-full shadow-lg mb-6">
-            أسعار الاشتراك
-          </span>
+          
+
+          
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
             Subscription Prices
           </h2>
@@ -79,20 +79,20 @@ const Pricing = () => {
 
         {/* Pricing Cards */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 mb-20">
-          {plans.map((plan) => (
-            <div
-              key={plan.title}
-              className={`rounded-2xl p-6 md:p-8 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl ${
-                plan.featured
-                  ? "bg-white shadow-2xl ring-2 ring-accent scale-[1.02]"
-                  : "bg-white/95 shadow-xl"
-              }`}
-            >
-              {plan.featured && (
-                <span className="inline-block bg-accent text-accent-foreground text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full mb-4">
+          {plans.map((plan) =>
+          <div
+            key={plan.title}
+            className={`rounded-2xl p-6 md:p-8 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl ${
+            plan.featured ?
+            "bg-white shadow-2xl ring-2 ring-accent scale-[1.02]" :
+            "bg-white/95 shadow-xl"}`
+            }>
+            
+              {plan.featured &&
+            <span className="inline-block bg-accent text-accent-foreground text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full mb-4">
                   Best Value
                 </span>
-              )}
+            }
               <h3 className="text-lg font-bold text-foreground mb-2">
                 {plan.title}
               </h3>
@@ -105,26 +105,26 @@ const Pricing = () => {
                 </span>
               </div>
               <ul className="space-y-3 mb-8">
-                {plan.features.map((feature) => (
-                  <li key={feature} className="flex items-start gap-2">
+                {plan.features.map((feature) =>
+              <li key={feature} className="flex items-start gap-2">
                     <Check className="w-5 h-5 text-primary shrink-0 mt-0.5" />
                     <span className="text-muted-foreground text-sm">
                       {feature}
                     </span>
                   </li>
-                ))}
+              )}
               </ul>
               <button
-                className={`w-full py-3 rounded-xl font-semibold transition-all duration-200 ${
-                  plan.featured
-                    ? "bg-primary text-primary-foreground hover:opacity-90 shadow-md"
-                    : "bg-secondary text-foreground hover:bg-primary hover:text-primary-foreground"
-                }`}
-              >
+              className={`w-full py-3 rounded-xl font-semibold transition-all duration-200 ${
+              plan.featured ?
+              "bg-primary text-primary-foreground hover:opacity-90 shadow-md" :
+              "bg-secondary text-foreground hover:bg-primary hover:text-primary-foreground"}`
+              }>
+              
                 Subscribe Now
               </button>
             </div>
-          ))}
+          )}
         </div>
 
         {/* Payment Methods */}
@@ -182,30 +182,30 @@ const Pricing = () => {
             <a
               href="#"
               className="inline-block transition-transform duration-200 hover:scale-105"
-              aria-label="Download on the App Store"
-            >
+              aria-label="Download on the App Store">
+              
               <img
                 src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
                 alt="Download on the App Store"
-                className="h-14 mx-auto"
-              />
+                className="h-14 mx-auto" />
+              
             </a>
             <a
               href="#"
               className="inline-block transition-transform duration-200 hover:scale-105"
-              aria-label="Get it on Google Play"
-            >
+              aria-label="Get it on Google Play">
+              
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
                 alt="Get it on Google Play"
-                className="h-14 mx-auto"
-              />
+                className="h-14 mx-auto" />
+              
             </a>
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>);
+
 };
 
 export default Pricing;
