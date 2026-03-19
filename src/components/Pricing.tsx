@@ -1,5 +1,7 @@
-import { Check, CreditCard, Smartphone } from "lucide-react";
+import { Check } from "lucide-react";
 import zaincashQr from "@/assets/zaincash-qr.png";
+import qicardLogo from "@/assets/qicard-logo.png";
+import zaincashLogo from "@/assets/zaincash-logo.png";
 
 const Pricing = () => {
   const plans = [
@@ -136,8 +138,8 @@ const Pricing = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {/* QiCard */}
             <div className="bg-white/15 backdrop-blur-sm rounded-xl p-6 border border-white/20 text-center">
-              <div className="w-14 h-14 rounded-full bg-accent/20 flex items-center justify-center mx-auto mb-4">
-                <CreditCard className="w-7 h-7 text-accent" />
+              <div className="w-16 h-16 rounded-full bg-white flex items-center justify-center mx-auto mb-4">
+                <img src={qicardLogo} alt="QiCard" className="w-10 h-10 object-contain" />
               </div>
               <h4 className="text-xl font-bold text-white mb-2">QiCard</h4>
               <p className="text-white/70 text-sm mb-4">Send payment to:</p>
@@ -150,8 +152,8 @@ const Pricing = () => {
 
             {/* Zain Cash */}
             <div className="bg-white/15 backdrop-blur-sm rounded-xl p-6 border border-white/20 text-center">
-              <div className="w-14 h-14 rounded-full bg-accent/20 flex items-center justify-center mx-auto mb-4">
-                <Smartphone className="w-7 h-7 text-accent" />
+              <div className="w-16 h-16 rounded-full bg-white flex items-center justify-center mx-auto mb-4">
+                <img src={zaincashLogo} alt="Zain Cash" className="w-12 h-12 object-contain" />
               </div>
               <h4 className="text-xl font-bold text-white mb-2">Zain Cash</h4>
               <p className="text-white/70 text-sm mb-4">Send payment to:</p>
